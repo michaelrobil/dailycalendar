@@ -6,16 +6,18 @@ var today = new Date();
 var time = today.getHours();
 var currentDate;
 // bring the current date to the front screen
-currentDate = $("#currentDay").text(today);
+currentDate = $("#currentDay").text(" " + today);
 //create the table container, rows, columns and add them in right order
 var container = $('<div class="blue">').attr("id", "blue");
 for (i = 0; i < 10; i++) {
     var row = $('<div class="green">').attr("id", "green" + i);
-    var columnRed = $('<div class="red">').attr("id", "red" + i).text(9 + i + ":00");
+    var columnRed = $('<div>').attr("class", "red").attr("id", "red" + i).text(" " + (9 + i + ":00"));
     var columnGray = $('<input class="gray">' + '</input>').attr("id", "gray" + [i]);
-    var columnYellow = $('<button>' + "Save" + '</button>').attr("class", "yellow").attr("id", "save" + i);
+    var columnYellow = $('<button>' + '<i class="far fa-save"></i>' + " Save" + '</button>').attr("class", "yellow").attr("id", "save" + i);
+    var clockIcon = $('<i class="far fa-clock"></i> ');
     container.append(row);
     row.append(columnRed, columnGray, columnYellow);
+    columnRed.prepend(clockIcon);
 }
 $('body').append(container);
 //styling the input field depending on the current time

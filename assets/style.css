@@ -21,7 +21,7 @@ body {
         color: rgb(243, 55, 55);
     }
     49% {
-        color: rgb(219, 148, 148);
+        color: #db9494;
     }
     50% {
         color: #06AED5;
@@ -60,7 +60,7 @@ body {
     border: white 2px solid;
     float: left;
     padding: 30px;
-    width: 100px;
+    width: 150px;
     height: 95px;
     text-align: center;
 }
@@ -73,28 +73,48 @@ body {
     background-color: gray;
     border: white 2px solid;
     padding: 10px;
-    width: 400px;
+    width: 300px;
     text-align: center;
     height: 95px;
+}
+
+.gray:hover {
+    background: linear-gradient(#f33737, #db9494);
+    color: seashell;
+    font-weight: 300;
 }
 
 .yellow {
     font-size: 20px;
     color: #ffffff;
     z-index: 1;
-    float: left;
     border: white 2px solid;
     padding: 25px;
-    width: 100px;
+    width: 150px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     text-align: center;
     height: 95px;
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(rgb(0, 41, 128), #06AED5);
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+}
+
+.yellow:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
 }
 
 .yellow:hover {
-    background-color: #f33737;
+    background: linear-gradient(#f33737, #db9494);
     color: seashell;
     font-weight: 300;
 }
