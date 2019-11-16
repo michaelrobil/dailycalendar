@@ -6,19 +6,43 @@
     border-bottom: 10px solid black;
 }
 
+#currentDay {
+    font-size: 25px;
+    font-weight: 600;
+    animation: blinkingText 20s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: rgb(243, 55, 55);
+    }
+    49% {
+        color: rgb(219, 148, 148);
+    }
+    50% {
+        color: #06AED5;
+    }
+    99% {
+        color: rgb(219, 148, 148);
+    }
+    100% {
+        color: rgb(243, 55, 55);
+    }
+}
+
 .blue {
     margin: auto;
     position: relative;
-    width: 700px;
+    width: 650px;
     height: auto;
 }
 
 .green {
     color: white;
     border: white 2px solid;
-    padding: 15px 10px 5px 0px;
     margin: auto;
     width: auto;
+    height: 100px;
 }
 
 .red {
@@ -28,8 +52,9 @@
     color: white;
     border: white 2px solid;
     float: left;
-    padding: 10px;
+    padding: 30px;
     width: 100px;
+    height: 95px;
     text-align: center;
 }
 
@@ -40,8 +65,9 @@
     background-color: gray;
     border: white 2px solid;
     padding: 10px;
-    width: 300px;
+    width: 400px;
     text-align: center;
+    height: 95px;
 }
 
 .yellow {
@@ -49,10 +75,11 @@
     z-index: 1;
     float: left;
     border: white 2px solid;
-    padding: 10px;
+    padding: 25px;
     width: 100px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     text-align: center;
+    height: 95px;
 }
