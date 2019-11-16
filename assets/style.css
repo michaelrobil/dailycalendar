@@ -1,3 +1,7 @@
+body {
+    background-image: url("background.jpg");
+}
+
 .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -9,7 +13,7 @@
 #currentDay {
     font-size: 25px;
     font-weight: 600;
-    animation: blinkingText 20s infinite;
+    animation: blinkingText 10s infinite;
 }
 
 @keyframes blinkingText {
@@ -23,10 +27,13 @@
         color: #06AED5;
     }
     99% {
+        color: #ecc790;
+    }
+    49% {
         color: rgb(219, 148, 148);
     }
     100% {
-        color: rgb(243, 55, 55);
+        color: #f33737;
     }
 }
 
@@ -39,16 +46,16 @@
 
 .green {
     color: white;
-    border: white 2px solid;
     margin: auto;
     width: auto;
-    height: 100px;
+    height: auto;
 }
 
 .red {
+    font-size: 20px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: rgb(243, 55, 55);
+    background-color: #f33737;
     color: white;
     border: white 2px solid;
     float: left;
@@ -59,6 +66,7 @@
 }
 
 .gray {
+    font-size: 20px;
     z-index: 1;
     color: white;
     float: left;
@@ -71,6 +79,7 @@
 }
 
 .yellow {
+    font-size: 20px;
     color: #ffffff;
     z-index: 1;
     float: left;
@@ -82,4 +91,10 @@
     background-color: #06AED5;
     text-align: center;
     height: 95px;
+}
+
+.yellow:hover {
+    background-color: #f33737;
+    color: seashell;
+    font-weight: 300;
 }

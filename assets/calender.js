@@ -10,7 +10,7 @@ currentDate = $("#currentDay").text(today);
 //create the table container, rows, columns and add them in right order
 var container = $('<div class="blue">').attr("id", "blue");
 for (i = 0; i < 10; i++) {
-    var row = $('<div class="green">').attr("id", "green" + i).text(".");
+    var row = $('<div class="green">').attr("id", "green" + i);
     var columnRed = $('<div class="red">').attr("id", "red" + i).text(9 + i + ":00");
     var columnGray = $('<input class="gray">' + '</input>').attr("id", "gray" + [i]);
     var columnYellow = $('<button>' + "Save" + '</button>').attr("class", "yellow").attr("id", "save" + i);
@@ -24,7 +24,7 @@ for (i = 9; i < 19; i++) {
     if (time < i) {
         $("#gray" + counter).css("background-color", "#008000");
     } else if (time == i) {
-        $("#gray" + counter).css("background-color", "#ffffff");
+        $("#gray" + counter).css("background-color", "#f33737").css("opacity", "0.6");
         $("#red" + counter).css("animation", "blinkingText 0.9s infinite");
         $("#save" + counter).css("animation", "blinkingText 0.9s infinite");
     }
