@@ -118,3 +118,42 @@ body {
     color: seashell;
     font-weight: 300;
 }
+
+@media screen and (max-width:768px) {
+    .blue {
+        width: 95%;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .green {
+        margin: 0px;
+        padding: 0px;
+    }
+    .gray {
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blue {
+        width: 95%;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .green {
+        margin: 0px;
+        width: auto;
+        padding: 0px;
+    }
+    .red {
+        width: 100px;
+    }
+    .gray {
+        width: 340px;
+    }
+    .yellow {
+        width: 100px;
+    }
+}
