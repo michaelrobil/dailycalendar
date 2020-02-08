@@ -1,7 +1,7 @@
 # dailycalendar
 
 ## About
-This web application is a simple calendar application that allows the user to save events for each hour of the day.
+This web application is a simple planner application that allows the user to save events for each hour of the day.
 
 ## Contributors
 [Michael Robil](https://github.com/michaelrobil)
