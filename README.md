@@ -2,6 +2,8 @@
 
 ## About
 This web application is a simple planner application that allows the user to save events for each hour of the day.
+## Aplication Screenshot
+![14-daily-planner](https://user-images.githubusercontent.com/56613553/74095743-8bea9300-4aba-11ea-8586-34831e63d8f3.png)
 
 ## Contributors
 [Michael Robil](https://github.com/michaelrobil)
